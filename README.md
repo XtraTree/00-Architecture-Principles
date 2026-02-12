@@ -34,25 +34,25 @@ A **strategic framework** for designing secure, resilient, and AI-ready hybrid i
 <tr>
 <td style="background-color: #E3F2FD"><strong>Cloud Architecture</strong></td>
 <td style="background-color: #E3F2FD">WHERE workloads run</td>
-<td style="background-color: #E3F2FD"><a href="../01-Hybrid-Multi-Cloud-Blueprints">REPO 1</a></td>
+<td style="background-color: #E3F2FD"><a href="https://github.com/XtraTree/01-Hybrid-Multi-Cloud-Blueprints>REPO 1</a></td>
 <td style="background-color: #E3F2FD">Cloud-native? Hybrid? Multi-cloud? Repatriate?</td>
 </tr>
 <tr>
 <td style="background-color: #FFEBEE"><strong>Network Security</strong></td>
 <td style="background-color: #FFEBEE">HOW networks are secured</td>
-<td style="background-color: #FFEBEE"><a href="../02-Network-Modernization">REPO 2</a></td>
+<td style="background-color: #FFEBEE"><a href="https://github.com/XtraTree/02-Network-Modernization">REPO 2</a></td>
 <td style="background-color: #FFEBEE">Optimize perimeter? Micro-segment? Zero-trust?</td>
 </tr>
 <tr>
 <td style="background-color: #F3E5F5"><strong>Identity & Access</strong></td>
 <td style="background-color: #F3E5F5">HOW identity is verified</td>
-<td style="background-color: #F3E5F5"><a href="../03-Zero-Trust-Security">REPO 3</a></td>
+<td style="background-color: #F3E5F5"><a href="https://github.com/XtraTree/03-Zero-Trust-Security">REPO 3</a></td>
 <td style="background-color: #F3E5F5">Basic auth? Behavior analysis? Full zero-trust?</td>
 </tr>
 <tr>
 <td style="background-color: #E8F5E9"><strong>Governance & Operations</strong></td>
 <td style="background-color: #E8F5E9">HOW policy is enforced</td>
-<td style="background-color: #E8F5E9"><a href="../04-Cloud-Native-Governance">REPO 4</a></td>
+<td style="background-color: #E8F5E9"><a href="https://github.com/XtraTree/04-Cloud-Native-Governance">REPO 4</a></td>
 <td style="background-color: #E8F5E9">Manual review? Policy-as-code? Autonomous?</td>
 </tr>
 </table>
