@@ -1,7 +1,7 @@
 Enterprise Architecture principles for designing secure, resilient, AI-ready hybrid infrastructures across network, cloud, and security domains.
 # 🏛️ Architecture Principles: Enterprise-Grade Decision Framework
 
-> **The Strategic Question**: How do you ensure every architecture decision—across network, cloud, security, and governance domains—aligns with the same strategic intent?
+> **The Strategic Question**: How do you ensure every architecture decision across network, cloud, security, and governance domains aligns with the same strategic intent?
 
 [![Enterprise Architecture](https://img.shields.io/badge/Enterprise-Architecture-blue)](.)
 [![AI-Ready](https://img.shields.io/badge/AI-Ready-informational)](.)
@@ -34,7 +34,7 @@ A **strategic framework** for designing secure, resilient, and AI-ready hybrid i
 <tr>
 <td style="background-color: #E3F2FD"><strong>Cloud Architecture</strong></td>
 <td style="background-color: #E3F2FD">WHERE workloads run</td>
-<td style="background-color: #E3F2FD"><a href="https://github.com/XtraTree/01-Hybrid-Multi-Cloud-Blueprints>REPO 1</a></td>
+<td style="background-color: #E3F2FD"><a href="https://github.com/XtraTree/01-Hybrid-Multi-Cloud-Blueprints">REPO 1</a></td>
 <td style="background-color: #E3F2FD">Cloud-native? Hybrid? Multi-cloud? Repatriate?</td>
 </tr>
 <tr>
