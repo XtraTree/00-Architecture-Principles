@@ -1,4 +1,3 @@
-Enterprise Architecture principles for designing secure, resilient, AI-ready hybrid infrastructures across network, cloud, and security domains.
 # 🏛️ Architecture Principles: Enterprise-Grade Decision Framework
 
 > **The Strategic Question**: How do you ensure every architecture decision across network, cloud, security, and governance domains aligns with the same strategic intent?
@@ -8,56 +7,44 @@ Enterprise Architecture principles for designing secure, resilient, AI-ready hyb
 [![Hybrid Infrastructure](https://img.shields.io/badge/Hybrid-Infrastructure-purple)](.)
 [![Security First](https://img.shields.io/badge/Security-First-critical)](.)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-brightgreen)](.)
 
 ---
 
-## 🎯 What This Repository Is
+## 📖 About
 
-A **strategic framework** for designing secure, resilient, and AI-ready hybrid infrastructures. These four principles ensure that architecture decisions across **network**, **cloud**, **security**, and **governance** domains are coherent, not contradictory.
+A **strategic framework** for designing secure, resilient, and AI-ready hybrid infrastructures. These four principles ensure that architecture decisions across **network**, **cloud**, **security**, and **governance** domains are **coherent, not contradictory**.
 
 **Problem**: Most organizations have architecture principles buried in documents nobody reads. Teams don't know them. Projects ignore them. Decisions contradict them.
 
-**Solution**: These four principles are **operational** every pattern in the companion repos traces back to them.
+**Solution**: These four principles are **operational** — every pattern in the companion repos traces back to them.
+
+**It is not code-centric. It is architecture-centric.**
 
 ---
 
-## 🌐 Domains This Framework Covers
+## 🎯 Portfolio Structure
 
-<table>
-<tr>
-<th style="background-color: #1976D2; color: white">Domain</th>
-<th style="background-color: #1976D2; color: white">Focus</th>
-<th style="background-color: #1976D2; color: white">Repo</th>
-<th style="background-color: #1976D2; color: white">Decision</th>
-</tr>
-<tr>
-<td style="background-color: #E3F2FD"><strong>Cloud Architecture</strong></td>
-<td style="background-color: #E3F2FD">WHERE workloads run</td>
-<td style="background-color: #E3F2FD"><a href="https://github.com/XtraTree/01-Hybrid-Multi-Cloud-Blueprints">REPO 1</a></td>
-<td style="background-color: #E3F2FD">Cloud-native? Hybrid? Multi-cloud? Repatriate?</td>
-</tr>
-<tr>
-<td style="background-color: #FFEBEE"><strong>Network Security</strong></td>
-<td style="background-color: #FFEBEE">HOW networks are secured</td>
-<td style="background-color: #FFEBEE"><a href="https://github.com/XtraTree/02-Network-Modernization">REPO 2</a></td>
-<td style="background-color: #FFEBEE">Optimize perimeter? Micro-segment? Zero-trust?</td>
-</tr>
-<tr>
-<td style="background-color: #F3E5F5"><strong>Identity & Access</strong></td>
-<td style="background-color: #F3E5F5">HOW identity is verified</td>
-<td style="background-color: #F3E5F5"><a href="https://github.com/XtraTree/03-Zero-Trust-Security">REPO 3</a></td>
-<td style="background-color: #F3E5F5">Basic auth? Behavior analysis? Full zero-trust?</td>
-</tr>
-<tr>
-<td style="background-color: #E8F5E9"><strong>Governance & Operations</strong></td>
-<td style="background-color: #E8F5E9">HOW policy is enforced</td>
-<td style="background-color: #E8F5E9"><a href="https://github.com/XtraTree/04-Cloud-Native-Governance">REPO 4</a></td>
-<td style="background-color: #E8F5E9">Manual review? Policy-as-code? Autonomous?</td>
-</tr>
-</table>
+Each architectural principle is applied across a structured decision model:
 
-**This repo (00)**: The **foundation principles** that drive decisions in all four domains.
+1. **Business Context** — Strategic drivers & constraints
+2. **Current-State Assessment** — Domain baseline & gaps  
+3. **Target Architecture Blueprint** — Principle-aligned vision
+4. **Governance & Control Model** — Policy enforcement
+5. **Process Flow Design** — Implementation workflows
+6. **Risk & Trade-off Analysis** — Mitigation strategies
+7. **Reusable Architecture Patterns** — Scalable solutions across domains
+
+---
+
+## 💡 Architectural Philosophy
+
+| Principle | Philosophy |
+|-----------|-----------|
+| **Strategic Focus** | Architecture is strategic, not technical documentation |
+| **Embedded Governance** | Governance must be embedded, not layered |
+| **Process Discipline** | Process discipline enables scalable transformation |
+| **Structural Security** | Security is structural, not reactive |
+| **Intentional Complexity** | Complexity must be intentionally designed |
 
 ---
 
@@ -66,7 +53,7 @@ A **strategic framework** for designing secure, resilient, and AI-ready hybrid i
 ### Principle 1️⃣: Security & Identity First 🛡️
 
 **The Strategic Why**:
-In regulated industries (healthcare, finance, critical infrastructure), security that's **bolted on after** the architecture is done becomes an audit risk and slows innovation. But security **built into** the architecture decisions becomes a **competitive advantage**.
+In regulated industries (healthcare, finance, critical infrastructure), security **bolted on after** the architecture is done becomes an audit risk. But security **built into** architecture decisions becomes a **competitive advantage**.
 
 <div style="background-color: #FFE0B2; padding: 20px; border-radius: 5px; margin: 15px 0">
 
@@ -74,23 +61,24 @@ In regulated industries (healthcare, finance, critical infrastructure), security
 - Security is not a feature you add later
 - **Identity** (not network location) is the perimeter
 - Compliance is easier when built-in, not reviewed
-- Zero-trust is the architectural approach, not a firewall product
+- Zero-trust is the architectural approach, not a product
 
 </div>
 
-**🎯 How This Principle Shows Up Across Domains**:
+**📊 Current-State Assessment Without Principle**:
+- Ad-hoc security reviews (post-deployment)
+- Perimeter-based access (network location = trust)
+- Manual compliance audits every 12 months
+- Breach response takes days
 
-| Domain | Decision | With Principle | Impact |
-|--------|----------|-----------------|--------|
-| **Cloud** | Data storage location | Data stays where regulated (on-prem primary) | HIPAA/PCI-DSS compliance ✅ |
-| **Network** | Access control model | Identity-centric (not perimeter-centric) | Breach contained in minutes ✅ |
-| **Identity** | Trust model | Every access verified (zero-trust) | Insider threat detected ✅ |
-| **Governance** | Compliance process | Policy-as-code (not manual) | Audit cycles -75% ✅ |
+**🎯 Target Architecture With Principle**:
+- Identity-centric, policy-enforced architecture
+- Every access verified (zero-trust)
+- Compliance automated at deploy time
+- Breach contained in minutes
 
-**💼 Real-World Impact**:
-- Healthcare hospital: Audit cycles 8 weeks → 2 weeks
-- Financial institution: HIPAA/PCI-DSS violations per audit → Zero violations
-- Enterprise: Insider threat detection now automated (was manual)
+**🔄 Process Flow**:
+Every architecture decision → Identity & compliance assessment → Policy-enforced controls
 
 **🔗 Applied Across**:
 - ✅ REPO 1: Data sovereignty (on-prem for sensitive data)
@@ -98,54 +86,43 @@ In regulated industries (healthcare, finance, critical infrastructure), security
 - ✅ REPO 3: Identity-centric architecture
 - ✅ REPO 4: Policy enforcement at deploy time
 
-**⚠️ When This Principle Is Ignored**:
-- Security becomes expensive bottleneck (every deployment needs review)
-- Compliance violations discovered at audit (too late to fix)
-- Breach response takes days (no architectural containment)
-- Team scales linearly with security needs (can't scale)
-
 ---
 
 ### Principle 2️⃣: Observability & Governance as Control Planes 📊
 
 **The Strategic Why**:
-You can't optimize what you can't see. You can't govern at scale without automation. Organizations that treat **observability and governance as infrastructure** (not add-ons) scale faster and with lower risk.
+You can't optimize what you can't see. You can't govern at scale without automation. Organizations that treat **observability and governance as infrastructure** scale faster with lower risk.
 
 <div style="background-color: #E1BEE7; padding: 20px; border-radius: 5px; margin: 15px 0">
 
 **Core Concept**:
-- Visibility into infrastructure is as important as the infrastructure itself
+- Visibility is as important as infrastructure itself
 - Policy enforcement happens at deploy time, not audit time
-- Data-driven decisions replace faith-based decisions
+- Data-driven decisions replace faith-based ones
 - Governance scales through automation, not hiring
 
 </div>
 
-**🎯 How This Principle Shows Up Across Domains**:
+**📊 Current-State Assessment Without Principle**:
+- Manual compliance reviews (post-deployment)
+- Cost surprises at month-end
+- Slow operational decisions (need time to gather data)
+- Scaling requires hiring more people
 
-| Domain | Decision | With Principle | Impact |
-|--------|----------|-----------------|--------|
-| **Cloud** | Cost management | Real-time dashboards + auto-optimization | 40% cost reduction ✅ |
-| **Network** | Traffic visibility | Network observability (every flow monitored) | Threat detection in minutes ✅ |
-| **Identity** | Access patterns | Behavioral analytics (anomaly detection) | Insider threats caught early ✅ |
-| **Governance** | Policy enforcement | Policy-as-code (automatic at deploy) | 70% faster deployments ✅ |
+**🎯 Target Architecture With Principle**:
+- Real-time observability dashboards
+- Policy-as-code (automatic at deploy)
+- Data-driven cost optimization
+- Autonomous remediation workflows
 
-**💼 Real-World Impact**:
-- Enterprise: 8 FTE compliance/ops → 3 FTE (automation handled routine)
-- Multi-cloud: Discovered $2.3M in wasted cloud spend through visibility
-- Healthcare: Cost optimization found unused resources, saved $1.2M annually
+**🔄 Process Flow**:
+Every deployment → Policy validation → Real-time compliance visibility
 
 **🔗 Applied Across**:
 - ✅ REPO 1: Cost visibility per workload type
 - ✅ REPO 2: Network observability (who accesses what)
-- ✅ REPO 3: Access pattern monitoring (behavior baseline)
+- ✅ REPO 3: Access pattern monitoring
 - ✅ REPO 4: Real-time policy compliance
-
-**⚠️ When This Principle Is Ignored**:
-- Cost surprises (bill shock at month-end)
-- Compliance gaps discovered at audit (too late)
-- Operational decisions are slow (need time to gather data)
-- Scaling requires hiring more people (no automation leverage)
 
 ---
 
@@ -160,35 +137,30 @@ Vendor lock-in is a business risk. So is single-point-of-failure architecture. O
 - No single vendor's roadmap controls your destiny
 - Architecture works on-prem, cloud, hybrid, multi-cloud
 - Workloads can move between vendors if needed
-- Resilience is designed into the architecture, not bolted on
+- Resilience is designed in, not bolted on
 
 </div>
 
-**🎯 How This Principle Shows Up Across Domains**:
+**📊 Current-State Assessment Without Principle**:
+- Vendor lock-in (can't move workloads)
+- Single cloud region failure = business stops
+- Vendor price increase with no options
+- Technology shift forces full rearchitect
 
-| Domain | Decision | With Principle | Impact |
-|--------|----------|-----------------|--------|
-| **Cloud** | Vendor strategy | Multi-cloud (AWS + Azure) or hybrid | Can negotiate pricing ✅ |
-| **Network** | Design approach | Vendor-agnostic (works on-prem, cloud, k8s) | Not locked to vendor | ✅ |
-| **Identity** | Federation | Works across cloud providers + on-prem | User mobility ✅ |
-| **Governance** | Policy language | Portable policies (work anywhere) | Reuse across clouds ✅ |
+**🎯 Target Architecture With Principle**:
+- Multi-cloud capable (AWS + Azure or hybrid)
+- Portable policies & configurations
+- Workload mobility (can migrate between vendors)
+- Resilience built into design
 
-**💼 Real-World Impact**:
-- Financial institution: Multi-cloud gave negotiating leverage (pricing stayed reasonable)
-- Hospital: Hybrid architecture maintained data control + disaster recovery
-- Enterprise: Repatriated $8M cloud spend (realized pure cloud was overpriced)
+**🔄 Process Flow**:
+Architecture decision → Multi-cloud feasibility check → Vendor-agnostic implementation
 
 **🔗 Applied Across**:
-- ✅ REPO 1: Multiple architecture patterns (not forced into one)
-- ✅ REPO 2: Network design works anywhere (on-prem, cloud, hybrid)
+- ✅ REPO 1: Multiple patterns (not forced into one)
+- ✅ REPO 2: Works anywhere (on-prem, cloud, hybrid)
 - ✅ REPO 3: Identity federation (not vendor-proprietary)
-- ✅ REPO 4: Policies portable across vendors
-
-**⚠️ When This Principle Is Ignored**:
-- Vendor price increase → you're locked in (can't move)
-- Vendor roadmap change → you must adapt (no choice)
-- Single cloud region failure → entire business stops
-- Technology shift → you must rearchitect (huge cost)
+- ✅ REPO 4: Portable policies across vendors
 
 ---
 
@@ -197,63 +169,58 @@ Vendor lock-in is a business risk. So is single-point-of-failure architecture. O
 **The Strategic Why**:
 Technology cycles move fast. Infrastructure designed for **today** will be obsolete in 3 years. But architecture designed with **foresight** remains relevant for 5-7 years.
 
-<div style="background-color: #B3E5FC; padding: 20px; border-radius: 5px; margin: 15px 0">
+<div style="background-color: #B2DFDB; padding: 20px; border-radius: 5px; margin: 15px 0">
 
 **Core Concept**:
-- Architecture doesn't force specific technology choices
-- New workload types can be added without rearchitecting
-- Emerging tech (AI/ML, quantum, etc.) can be integrated
-- Governance model scales to autonomous systems
+- Build for extensibility, not just today's use cases
+- New technologies integrate without rearchitect
+- Governance ready for autonomous systems
+- Data architecture prepared for AI/ML
 
 </div>
 
-**🎯 How This Principle Shows Up Across Domains**:
+**📊 Current-State Assessment Without Principle**:
+- Architecture outdated in 3 years (must rebuild)
+- New technology requires full redesign
+- Governance bottleneck for new workloads
+- Data structure doesn't support AI/ML
 
-| Domain | Decision | With Principle | Impact |
-|--------|----------|-----------------|--------|
-| **Cloud** | Platform design | Works with containers, serverless, k8s, VMs | Flexible workload placement ✅ |
-| **Network** | Architecture model | Event-driven, not tightly coupled | Add services without redesign ✅ |
-| **Identity** | System design | Supports autonomous decisions (ML-driven) | Future-proof governance ✅ |
-| **Governance** | Automation level | Autonomous remediation ready (ML/AI) | Reduces human overhead ✅ |
+**🎯 Target Architecture With Principle**:
+- Extensible design (add new tech without rebuild)
+- Data lake ready for AI/ML workloads
+- Autonomous governance frameworks
+- Capability-ready infrastructure
 
-**💼 Real-World Impact**:
-- Healthcare: Data architecture ready for AI/ML diagnostics (no rearchitect needed)
-- Finance: Can adopt algorithmic trading without infrastructure redesign
-- Enterprise: Autonomous cost optimization (ML decides what to rightsize)
+**🔄 Process Flow**:
+3-5 year technology roadmap → Architecture extensibility → Governance automation
 
 **🔗 Applied Across**:
-- ✅ REPO 1: Data lakes (ML-ready)
-- ✅ REPO 2: Event-driven architecture (future-ready)
-- ✅ REPO 3: Autonomous decision framework
-- ✅ REPO 4: Machine learning-ready governance
-
-**⚠️ When This Principle Is Ignored**:
-- New technology requires full rearchitect (expensive)
-- AI/ML initiatives delayed by infrastructure (competitive disadvantage)
-- Autonomous systems can't be trusted (governance inadequate)
-- 3-year technology cycle becomes 2-year rearchitect cycle
+- ✅ REPO 1: Data lake architecture (AI-ready)
+- ✅ REPO 2: Container/Kubernetes-ready network
+- ✅ REPO 3: Autonomous identity decisions
+- ✅ REPO 4: Autonomous remediation patterns
 
 ---
 
-## 📊 How The Four Principles Work Together
+## 🎯 How These Principles Work Together
 
 ```
-START: Architecture decision needed
+ARCHITECTURE DECISION
   ↓
 PRINCIPLE 1: Security & Identity First 🛡️
-  ├─ Is security built-in or bolted-on?
-  ├─ Is identity the perimeter?
-  └─ Can we contain breach quickly?
+  ├─ Is identity verified?
+  ├─ Is compliance built-in?
+  └─ Is the attack surface minimized?
   ↓
 PRINCIPLE 2: Observability & Governance 📊
-  ├─ Can we see everything?
+  ├─ Can we see what's happening?
   ├─ Is policy enforced automatically?
-  └─ Does governance scale without hiring?
+  └─ Can we optimize based on data?
   ↓
 PRINCIPLE 3: Cloud-Agnostic Resilience ☁️
-  ├─ Are we locked into a vendor?
-  ├─ Can we move workloads?
-  └─ Is failover tested and proven?
+  ├─ Works on-prem, cloud, hybrid?
+  ├─ Can we move workloads if needed?
+  └─ Single vendor controls destiny?
   ↓
 PRINCIPLE 4: Future-Ready Foundations 🚀
   ├─ Will this work in 5-7 years?
@@ -265,90 +232,84 @@ RESULT: Architecture that's secure, observable, flexible, and scalable
 
 ---
 
-## 🎯 Cross-Domain Decision Framework
+## 🏆 Cross-Domain Decision Framework
 
-<table>
-<tr>
-<th style="background-color: #1976D2; color: white">Scenario</th>
-<th style="background-color: #1976D2; color: white">Without Principles</th>
-<th style="background-color: #2E7D32; color: white">With Principles</th>
-<th style="background-color: #2E7D32; color: white">Outcome</th>
-</tr>
-<tr>
-<td><strong>Building Healthcare System</strong></td>
-<td style="background-color: #FFEBEE">"Move everything to cloud for speed"</td>
-<td style="background-color: #C8E6C9">Hybrid (data on-prem, services in cloud)</td>
-<td style="background-color: #C8E6C9">HIPAA ✅, RTO 15min ✅, Cost -40% ✅</td>
-</tr>
-<tr>
-<td><strong>Securing Financial Platform</strong></td>
-<td style="background-color: #FFEBEE">"Perimeter security is enough"</td>
-<td style="background-color: #C8E6C9">Zero-trust (identity-centric)</td>
-<td style="background-color: #C8E6C9">Breach contained ✅, Audit -60% ✅</td>
-</tr>
-<tr>
-<td><strong>Controlling Cloud Costs</strong></td>
-<td style="background-color: #FFEBEE">"Optimize later"</td>
-<td style="background-color: #C8E6C9">Real-time visibility + auto-optimize</td>
-<td style="background-color: #C8E6C9">Cost -40% ✅, Transparent ✅</td>
-</tr>
-<tr>
-<td><strong>Preparing for AI/ML</strong></td>
-<td style="background-color: #FFEBEE">"Use current tech, rearchitect later"</td>
-<td style="background-color: #C8E6C9">Data lake + ML-ready governance</td>
-<td style="background-color: #C8E6C9">No rearchitect needed ✅</td>
-</tr>
-</table>
+| Scenario | Without Principles | With Principles | Outcome |
+|----------|---|---|---|
+| **Building Healthcare System** | "Move everything to cloud for speed" | Hybrid (data on-prem, services in cloud) | HIPAA ✅, RTO 15min ✅, Cost -40% ✅ |
+| **Securing Financial Platform** | "Perimeter security is enough" | Zero-trust (identity-centric) | Breach contained ✅, Audit -60% ✅ |
+| **Controlling Cloud Costs** | "Optimize later" | Real-time visibility + auto-optimize | Cost -40% ✅, Transparent ✅ |
+| **Preparing for AI/ML** | "Use current tech, rearchitect later" | Data lake + ML-ready governance | No rearchitect needed ✅ |
 
 ---
 
-## 🔗 How These Principles Connect to the Four Companion Repos
+## 🔗 How These Principles Connect to Four Companion Repos
 
-**This repo is the FOUNDATION. The other four repos are APPLICATIONS of these principles.**
+**This repo is the FOUNDATION. The other repos are APPLICATIONS of these principles.**
 
-### REPO 1: 01-Hybrid-Multi-Cloud-Blueprints 
+### REPO 1: 01-Hybrid-Multi-Cloud-Blueprints  
 **Answers**: WHERE should workloads run?  
-**Uses Principles**:
-- 1️⃣ **Security First**: Where sensitive data must stay (on-prem)
-- 2️⃣ **Observability**: Cost visibility per architecture type
-- 3️⃣ **Cloud-Agnostic**: Choose hybrid, multi-cloud, repatriation
-- 4️⃣ **Future-Ready**: Prepare for emerging workloads
+**Portfolio Structure**:
+1. Business Context → Cloud strategy drivers
+2. Current-State → Inventory of workloads
+3. Target Blueprint → Optimal cloud mix
+4. Governance → Cloud access controls
+5. Process → Workload classification
+6. Risk Analysis → Cost vs. compliance
+7. Patterns → Hybrid, multi-cloud, repatriation
+
+**Uses Principles**: 1️⃣ Security (data sovereignty) • 2️⃣ Observability (cost visibility) • 3️⃣ Cloud-Agnostic (flexibility) • 4️⃣ Future-Ready (emerging workloads)
 
 [→ See REPO 1](https://github.com/XtraTree/01-Hybrid-Multi-Cloud-Blueprints)
 
 ---
 
-### REPO 2: 02-Network-Modernization
+### REPO 2: 02-Network-Modernization  
 **Answers**: HOW are networks secured?  
-**Uses Principles**:
-- 1️⃣ **Security First**: Zero-trust segmentation (identity-based)
-- 2️⃣ **Observability**: Network visibility (every flow seen)
-- 3️⃣ **Cloud-Agnostic**: Works on-prem, cloud, hybrid
-- 4️⃣ **Future-Ready**: Kubernetes-ready, container-ready
+**Portfolio Structure**:
+1. Business Context → Network transformation drivers
+2. Current-State → MPLS/firewall baseline
+3. Target Blueprint → Zero-trust architecture
+4. Governance → Network policies
+5. Process → SD-WAN migration
+6. Risk Analysis → Cutover strategy
+7. Patterns → Micro-segmentation, zero-trust
+
+**Uses Principles**: 1️⃣ Security (zero-trust) • 2️⃣ Observability (network visibility) • 3️⃣ Cloud-Agnostic (works anywhere) • 4️⃣ Future-Ready (container-ready)
 
 [→ See REPO 2](https://github.com/XtraTree/02-Network-Modernization)
 
 ---
 
-### REPO 3: 03-Zero-Trust-Security
+### REPO 3: 03-Zero-Trust-Security  
 **Answers**: HOW is identity verified?  
-**Uses Principles**:
-- 1️⃣ **Security First**: Identity IS the perimeter
-- 2️⃣ **Observability**: Every access logged, patterns analyzed
-- 3️⃣ **Cloud-Agnostic**: Works on-prem, cloud, federation
-- 4️⃣ **Future-Ready**: Ready for autonomous decisions
+**Portfolio Structure**:
+1. Business Context → Security compliance drivers
+2. Current-State → Identity baseline
+3. Target Blueprint → Zero-trust identity
+4. Governance → Access policies
+5. Process → Identity verification workflows
+6. Risk Analysis → Insider threat mitigation
+7. Patterns → MFA, behavioral analytics, federation
+
+**Uses Principles**: 1️⃣ Security (identity IS perimeter) • 2️⃣ Observability (access logging) • 3️⃣ Cloud-Agnostic (federation) • 4️⃣ Future-Ready (autonomous decisions)
 
 [→ See REPO 3](https://github.com/XtraTree/03-Zero-Trust-Security)
 
 ---
 
-### REPO 4: 04-Cloud-Native-Governance
+### REPO 4: 04-Cloud-Native-Governance  
 **Answers**: HOW is policy enforced?  
-**Uses Principles**:
-- 1️⃣ **Security First**: Policy enforces security at deploy
-- 2️⃣ **Observability**: Real-time compliance visible
-- 3️⃣ **Cloud-Agnostic**: Policies work across vendors
-- 4️⃣ **Future-Ready**: Autonomous remediation ready
+**Portfolio Structure**:
+1. Business Context → Governance requirements
+2. Current-State → Manual policy review
+3. Target Blueprint → Policy-as-code
+4. Governance → Automated enforcement
+5. Process → Policy deployment pipeline
+6. Risk Analysis → Compliance gaps
+7. Patterns → OPA, Kyverno, admission control
+
+**Uses Principles**: 1️⃣ Security (policy at deploy) • 2️⃣ Observability (compliance visible) • 3️⃣ Cloud-Agnostic (vendor-portable) • 4️⃣ Future-Ready (autonomous remediation)
 
 [→ See REPO 4](https://github.com/XtraTree/04-Cloud-Native-Governance)
 
@@ -357,11 +318,11 @@ RESULT: Architecture that's secure, observable, flexible, and scalable
 ## ✅ How to Use These Principles
 
 ### For Architecture Decisions:
-1. **Identify the decision** (cloud architecture? network? identity? governance?)
-2. **List your constraints** (budget, compliance, timeline, team skills)
-3. **Evaluate against all four principles** (does the choice serve all four?)
-4. **Check for trade-offs** (what are we paying for this choice?)
-5. **Document the decision** (why you chose this, traced to principles)
+1. **Identify the decision** (cloud? network? identity? governance?)
+2. **List your constraints** (budget, compliance, timeline, skills)
+3. **Evaluate against all four principles** (does choice serve all?)
+4. **Check for trade-offs** (what are we paying for?)
+5. **Document the decision** (traced to principles)
 
 ### For Architecture Reviews:
 1. **Does this architecture serve Principle 1️⃣?** (Security first?)
@@ -372,16 +333,16 @@ RESULT: Architecture that's secure, observable, flexible, and scalable
 If any answer is "no", dig deeper.
 
 ### For Team Alignment:
-1. **Communicate these principles** to all teams
+1. **Communicate principles** to all teams
 2. **Reference them in debates** (use as tiebreaker)
-3. **Document decisions against principles** (why we chose this)
-4. **Evolve principles as business changes** (but rarely)
+3. **Document decisions against principles**
+4. **Evolve principles** as business changes (rarely)
 
 ---
 
 ## ❓ Key Questions This Repo Answers
 
-- ✅ What principles should guide all architecture decisions?
+- ✅ What principles guide all architecture decisions?
 - ✅ How do I evaluate if an architecture is "good"?
 - ✅ Why is security built-in better than bolted-on?
 - ✅ How does observability become a control plane?
@@ -392,14 +353,14 @@ If any answer is "no", dig deeper.
 
 ---
 
-## 🏛️ The Enterprise Architecture Model
+## 🏗️ The Enterprise Architecture Model
 
 ```
 LAYER 0: PRINCIPLES (Why) ← YOU ARE HERE
-  ├─ Security & Identity First
-  ├─ Observability & Governance
-  ├─ Cloud-Agnostic Resilience
-  └─ Future-Ready Foundations
+  ├─ Security & Identity First 🛡️
+  ├─ Observability & Governance 📊
+  ├─ Cloud-Agnostic Resilience ☁️
+  └─ Future-Ready Foundations 🚀
     ↓
 LAYER 1: PATTERNS (When to use what)
   ├─ 01-Hybrid-Multi-Cloud Blueprints
@@ -424,17 +385,9 @@ LAYER 3: OUTCOMES (Measured impact)
 
 ## 🤝 Contributing
 
-Found an issue? Want to add a principle?
+Found an issue? Want to add or refine a principle?
 
 [🐛 Open an issue](../../issues) | [💬 Start a discussion](../../discussions)
-
----
-
-## 📄 License
-
-This work is shared to advance enterprise architecture thinking.
-
-Use these principles for your organization. Build on them. Share your lessons.
 
 ---
 
