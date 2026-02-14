@@ -382,7 +382,8 @@ LAYER 3: OUTCOMES (Measured impact)
 ```
 
 ---
-
+🛡️ Jump to [REPO 1](https://github.com/XtraTree/01-Hybrid-Multi-Cloud-Blueprints), [REPO 2](https://github.com/XtraTree/02-Network-Modernization), [REPO 3](https://github.com/XtraTree/03-Zero-Trust-Security), or [REPO 4](https://github.com/XtraTree/04-Cloud-Native-Governance)
+---
 ## 🤝 Contributing
 
 Found an issue? Want to add or refine a principle?
