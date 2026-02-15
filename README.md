@@ -1,4 +1,4 @@
-# 🏛️ Architecture Principles: Enterprise-Grade Decision Framework
+# 📐 Architecture Principles: Enterprise-Grade Decision Framework
 
 > **The Strategic Question**: How do you ensure every architecture decision across network, cloud, security, and governance domains aligns with the same strategic intent?
 
