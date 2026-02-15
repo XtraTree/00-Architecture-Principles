@@ -6,7 +6,7 @@
 [![AI-Ready](https://img.shields.io/badge/AI-Ready-informational)](.)
 [![Hybrid Infrastructure](https://img.shields.io/badge/Hybrid-Infrastructure-purple)](.)
 [![Security First](https://img.shields.io/badge/Security-First-critical)](.)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
 
 ---
 
