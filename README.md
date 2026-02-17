@@ -16,7 +16,7 @@ A **strategic framework** for designing secure, resilient, and AI-ready hybrid i
 
 **Problem**: Most organizations have architecture principles buried in documents nobody reads. Teams don't know them. Projects ignore them. Decisions contradict them.
 
-**Solution**: These four principles are **operational** — every pattern in the companion repos traces back to them.
+**Solution**: These four principles are **operational** every pattern in the companion repos traces back to them.
 
 **It is not code-centric. It is architecture-centric.**
 
